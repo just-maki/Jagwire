@@ -1,6 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
 pandas>=2.0
 numpy>=1.24
 matplotlib>=3.7
 seaborn>=0.12
-torch>=2.0
+torch>=2.8
 torchvision>=0.15
+torchaudio>=2.8
+timm>=0.9
