@@ -8,3 +8,5 @@ torch>=2.8
 torchvision>=0.15
 torchaudio>=2.8
 timm>=0.9
+scikit-learn>=1.3
+megadetector
