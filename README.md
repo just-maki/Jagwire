@@ -22,10 +22,7 @@ git checkout K5tests
  
 A jaguar re-identification model that learns to recognise individual jaguars across photographs using metric learning. Built with a **MegaDescriptor-L (Swin-L) backbone**, **CBAM spatial attention**, and a **Sub-Center ArcFace** head. Trained and evaluated on the [Kaggle Jaguar Re-ID competition](https://www.kaggle.com/competitions/jaguar-re-id) dataset.
  
-> **Active branch:** All development lives on the `temp` branch.
-> ```bash
-> git checkout temp
-> ```
+> **Note:** This branch contains only the README. To use the model, you must switch to one of the branches listed above.
  
 ---
  
