@@ -2,10 +2,7 @@
  
 A jaguar re-identification model that learns to recognise individual jaguars across photographs using metric learning. Built with a **MegaDescriptor-L (Swin-L) backbone**, **CBAM spatial attention**, and a **Sub-Center ArcFace** head. Trained and evaluated on the [Kaggle Jaguar Re-ID competition](https://www.kaggle.com/competitions/jaguar-re-id) dataset.
  
-> **Active branch:** All development lives on the `temp` branch.
-> ```bash
-> git checkout temp
-> ```
+> **Note:** You are on the `K5tests` branch — Sub-Center ArcFace with **K=5** sub-centers. See the other branches (`K1tests`, `K3tests`) for different K ablations.
  
 ---
  
@@ -34,7 +31,7 @@ Jagwire identifies individual jaguars by learning a compact 512-dimensional embe
 | Backbone | `MegaDescriptor-L-384` (Swin-L, 384 × 384 input) via HuggingFace/timm |
 | Attention | CBAM (Channel + Spatial) — focuses on spot and flank patterns |
 | Embedding neck | Linear(1536 → 512) + BatchNorm1d |
-| Loss head | Sub-Center ArcFace (K=3 sub-centers, s=64, m=0.5) |
+| Loss head | Sub-Center ArcFace (K=5 sub-centers, s=64, m=0.5) |
 | Similarity metric | Cosine similarity rescaled to [0, 1] |
  
 **Why Sub-Center ArcFace?**
@@ -52,7 +49,7 @@ Without attention, the backbone may focus on background vegetation rather than t
 ```bash
 git clone https://github.com/just-maki/Jagwire.git
 cd Jagwire
-git checkout temp
+git checkout K5tests
 ```
  
 ### 2. Create and activate a virtual environment
