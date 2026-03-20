@@ -69,7 +69,7 @@ Without attention, the backbone may focus on background vegetation rather than t
 ```bash
 git clone https://github.com/just-maki/Jagwire.git
 cd Jagwire
-git checkout temp
+git checkout K1tests  # or K3tests / K5tests
 ```
  
 ### 2. Create and activate a virtual environment
